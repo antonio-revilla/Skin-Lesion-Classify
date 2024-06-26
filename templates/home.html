@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin Condition Detector</title>
+<link rel="stylesheet" href="static/css/style_home.css">
+</head>
+<body>
+<div class="top-border">
+    <h1>Skin Condition Detector</h1>
+</div>
+
+<div class="container">
+    <div class="image-box">
+        <img id="skin_image" src="static/images/cartoon_skin_lesion.png" alt="Image">
+    </div>
+    <div class="upload-btn-wrapper">
+        <button>Upload Image</button>
+        <input type="file" name="myfile" accept=".jpg, .png, .jpeg" onchange="updateImage(this)">
+    </div>
+    <div class="result-box">
+        <h2 id="result">Works Best on Dermoscopic Images!</h2>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="/about">About</a>
+</div>
+<script src="static/js/script.js"></script>
+</body>
+</html>
